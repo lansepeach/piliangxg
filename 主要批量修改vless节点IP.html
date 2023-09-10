@@ -65,7 +65,7 @@
             let modifiedLinksOutput = "";
 
             newIPs.forEach(newIP => {
-                const modifiedLinks = vlessLinks.map(link => link.replace(/@[0-9.:]+/, "@" + newIP.trim()));
+                const modifiedLinks = vlessLinks.map(link => link.replace(/@[0-9.:]+/, "@" + newIP.trim()+ ":443"));
                 modifiedLinksOutput += modifiedLinks.join("\n") + "\n\n";
             });
 
